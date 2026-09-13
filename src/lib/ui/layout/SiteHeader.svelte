@@ -45,6 +45,15 @@
 
 <svelte:window bind:scrollY={y} />
 
+<!-- Outside Click Backdrop -->
+{#if isSearchOpen}
+    <div 
+        class="fixed inset-0 top-[112px] bg-charcoal/10 backdrop-blur-[2px] z-30 transition-opacity"
+        on:click={() => isSearchOpen = false}
+        aria-hidden="true"
+    ></div>
+{/if}
+
 <header 
     class="fixed top-0 inset-x-0 z-50 transition-all duration-500 ease-[cubic-bezier(0.23,1,0.32,1)]
     {isHidden ? '-translate-y-full' : 'translate-y-0'} 
@@ -55,7 +64,7 @@
         Complimentary Global Shipping on orders over ₹15,000
     </div>
 
-    <!-- Main Navbar: Switched to absolute centering to prevent flexbox collision -->
+    <!-- Main Navbar -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between relative z-50">
         
         <!-- Left: Hamburger & Desktop Links -->
@@ -162,7 +171,6 @@
 <div class="fixed inset-0 bg-white z-40 transition-all duration-500 ease-[cubic-bezier(0.23,1,0.32,1)] {isMobileMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}">
     <div class="flex flex-col h-full pt-36 px-6 pb-10 overflow-y-auto max-w-lg mx-auto w-full">
         
-        <!-- Modern Minimal Search -->
         <form on:submit={handleSearchSubmit} class="mb-10 relative opacity-0 translate-y-4 transition-all duration-500 delay-100 border-b border-charcoal/20 pb-2 {isMobileMenuOpen ? '!opacity-100 !translate-y-0' : ''}">
             <input 
                 type="search"
@@ -175,7 +183,6 @@
             </button>
         </form>
 
-        <!-- Refined List Navigation -->
         <nav class="flex flex-col" aria-label="Mobile Navigation">
             {#each [
                 { title: 'The Collection', href: '/shop' },
