@@ -107,20 +107,21 @@
 
         <!-- Right: Utility Icons -->
         <div class="flex-1 flex items-center justify-end gap-3 sm:gap-6">
+            <!-- Streamlined Search Toggle (Icon-driven) -->
             <button 
                 type="button" 
                 on:click={() => { isSearchOpen = !isSearchOpen; isMobileMenuOpen = false; }}
                 class="text-charcoal hover:opacity-70 transition-opacity hidden sm:flex items-center gap-2"
                 aria-label="Search"
             >
-                {#if isSearchOpen}
-                    <span class="text-[11px] font-bold tracking-widest uppercase">Close</span>
-                {:else}
-                    <svg class="h-5 w-5 stroke-[1.5px]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg class="h-5 w-5 stroke-[1.5px]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    {#if isSearchOpen}
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M6 18L18 6M6 6l12 12" />
+                    {:else}
                         <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
-                    </svg>
-                    <span class="text-[11px] font-bold tracking-widest uppercase hidden lg:block">Search</span>
-                {/if}
+                    {/if}
+                </svg>
+                <span class="text-[11px] font-bold tracking-widest uppercase hidden lg:block">Search</span>
             </button>
 
             <a href="/login" class="hidden sm:block text-[11px] font-bold tracking-widest uppercase text-charcoal hover:opacity-70 transition-opacity">
