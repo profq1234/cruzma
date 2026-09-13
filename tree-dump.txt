@@ -1,0 +1,66 @@
+|-- .
+|-- README.md
+|-- drizzle.config.js
+|-- index.html
+|-- netlify.toml
+|-- node_modules
+|-- package-lock.json
+|-- package.json
+|-- postcss.config.js
+|-- seed.js
+|-- src
+  |-- app.css
+  |-- app.d.ts
+  |-- app.html
+  |-- lib
+    |-- assets
+      |-- favicon.svg
+    |-- components
+      |-- layout
+        |-- DesktopNav.svelte
+        |-- MobileNav.svelte
+        |-- Navbar.svelte
+      |-- ui
+        |-- ComingSoon.svelte
+    |-- core
+      |-- server
+        |-- db.js
+        |-- schema.js
+      |-- stores
+      |-- utils
+    |-- index.ts
+    |-- ui
+      |-- components
+        |-- HeroLookbook.svelte
+      |-- layout
+        |-- SiteFooter.svelte
+        |-- SiteHeader.svelte
+  |-- routes
+    |-- (admin)
+      |-- admin
+        |-- login
+    |-- (storefront)
+      |-- +layout.svelte
+      |-- +page.svelte
+      |-- shop
+        |-- +page.server.js
+        |-- +page.svelte
+        |-- [sku]
+        |-- [slug]
+          |-- +page.server.js
+          |-- +page.svelte
+    |-- +layout.svelte
+    |-- api
+      |-- checkout
+      |-- seed
+        |-- +server.js
+      |-- verify
+      |-- webhooks
+        |-- razorpay
+|-- static
+  |-- robots.txt
+|-- svelte.config.js
+|-- tailwind.config.js
+|-- tree-dump.txt
+|-- tsconfig.json
+|-- vite.config.ts

@@ -4,7 +4,7 @@
             
             <!-- Brand & Trust Signals -->
             <div class="md:col-span-4 lg:col-span-5 flex flex-col gap-6">
-                <h2 class="text-3xl font-serif font-black tracking-widest uppercase">Cruzma</h2>
+                <h2 class="text-3xl font-serif font-black tracking-widest uppercase">Manner</h2>
                 <p class="text-sm text-taupe-light leading-relaxed max-w-sm text-balance">
                     Curated lifestyle and minimalist daily essentials with direct-to-consumer craft. Designed for the modern wardrobe.
                 </p>
@@ -52,7 +52,7 @@
         </div>
 
         <div class="border-t border-charcoal-muted/30 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
-            <p class="text-xs text-taupe">© {new Date().getFullYear()} Cruzma. All rights reserved.</p>
+            <p class="text-xs text-taupe">© {new Date().getFullYear()} Manner. All rights reserved.</p>
             <div class="flex gap-6 text-xs text-taupe">
                 <a href="/privacy" class="hover:text-white transition-colors">Privacy Policy</a>
                 <a href="/terms" class="hover:text-white transition-colors">Terms of Service</a>

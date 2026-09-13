@@ -4,13 +4,33 @@ export default {
   theme: {
     extend: {
       colors: {
-        charcoal: '#1a1a1a',
-        alabaster: '#f9f9f9',
-        taupe: '#8b8580'
+        charcoal: {
+          DEFAULT: '#121212',
+          light: '#262626',
+          muted: '#4a4a4a'
+        },
+        alabaster: {
+          DEFAULT: '#fbfbfb',
+          subtle: '#f4f4f2',
+          surface: '#ffffff'
+        },
+        taupe: {
+          DEFAULT: '#8b8580',
+          light: '#b8b2ac',
+          dark: '#5c5753'
+        },
+        accent: {
+          amber: '#c59b27',
+          emerald: '#15803d'
+        }
       },
       fontFamily: {
-        serif: ['"Playfair Display"', 'serif'],
-        sans: ['"Inter"', 'sans-serif']
+        serif: ['"Playfair Display"', 'Georgia', 'serif'],
+        sans: ['"Inter"', 'system-ui', '-apple-system', 'sans-serif']
+      },
+      letterSpacing: {
+        tightest: '-0.035em',
+        widest: '0.15em'
       }
     }
   },

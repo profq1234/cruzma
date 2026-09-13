@@ -2,7 +2,7 @@
     <!-- LCP Optimization: fetchpriority high, eager loading, explicit object positioning -->
     <img 
         src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=2000&auto=format&fit=crop" 
-        alt="Cruzma Autumn Collection Lookbook" 
+        alt="Manner Autumn Collection Lookbook" 
         class="absolute inset-0 w-full h-full object-cover opacity-80" 
         fetchpriority="high"
         loading="eager"
